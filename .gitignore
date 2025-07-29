@@ -1,0 +1,14 @@
+# 執行檔
+*.out
+*.o
+a.out
+
+# 沒有副檔名的執行檔
+advanced_pointers
+function_pointers_callbacks
+misra_c_basics
+fan_control_state_machine
+
+# 編輯器
+*.swp
+*~
