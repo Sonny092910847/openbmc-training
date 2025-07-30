@@ -28,7 +28,7 @@ openbmc-training/
         └── fan_control_state_machine.c
 ```
         
-🔧 1: C 語言
+##  🔧 1: C 語言
 1️⃣ 進階指標操作 (pointers/)
 學習重點：
 
@@ -37,7 +37,7 @@ openbmc-training/
 記憶體洩漏預防與偵測
 指標陣列 vs 陣列指標
 
-核心概念展示：
+## 核心概念展示：
 
 ```bash
 // 動態二維陣列分配
@@ -45,7 +45,7 @@ int **matrix = (int**)malloc(rows * sizeof(int*));
 // 記憶體安全釋放模式
 ```
 
-2️⃣ 函數指標與回調機制 (callbacks/)
+## 2️⃣ 函數指標與回調機制 (callbacks/)
 學習重點：
 
 函數指標語法與應用
@@ -53,13 +53,13 @@ int **matrix = (int**)malloc(rows * sizeof(int*));
 回調函數在嵌入式系統中的應用
 模擬 BMC 感測器事件系統
 
-實作特色：
+實作：
 
 BMC 元件介面抽象化
 事件處理器架構
 可擴展的系統設計
 
-3️⃣ MISRA-C 編碼標準 (misra/)
+## 3️⃣ MISRA-C 編碼標準 (misra/)
 學習重點：
 
 嵌入式系統安全編碼實踐
@@ -73,9 +73,9 @@ BMC 元件介面抽象化
 單一退出點函數設計
 明確的運算順序
 
-4️⃣ 狀態機實作 (state-machine/)
+## 4️⃣ 狀態機實作 (state-machine/)
 專案亮點： 完整的 BMC 風扇控制系統模擬
-實作功能：
+實作：
 
 6 種系統狀態（IDLE → NORMAL → WARNING → CRITICAL → EMERGENCY → SHUTDOWN）
 基於溫度的智能轉換邏輯
@@ -92,21 +92,21 @@ BMC 元件介面抽象化
 [SHUTDOWN] <--失敗-- [EMERGENCY] <---- [CRITICAL]
 ```
 
-💻 編譯與執行
+## 💻 編譯與執行
 環境需求
 
 Ubuntu 22.04 LTS
 GCC 11.4.0 或更高版本
 Git 2.34.1 或更高版本
 
-編譯指令
+## 編譯指令
 
 ```bash
 git clone https://github.com/Sonny092910847/openbmc-training.git
 cd openbmc-training
 ```
 
-# 編譯單一程式
+## 編譯單一程式
 
 ```bash
 cd week1/state-machine
@@ -114,26 +114,26 @@ gcc -Wall -Wextra -g -o fan_control_state_machine fan_control_state_machine.c
 ./fan_control_state_machine
 ```
 
-# 使用更嚴格的編譯選項
+## 使用更嚴格的編譯選項
 
 ```bash
 gcc -Wall -Wextra -Werror -std=c99 -pedantic -g -o output input.c
 ```
 
-記憶體檢查
-# 使用 valgrind 檢查記憶體洩漏
+## 記憶體檢查
+使用 valgrind 檢查記憶體洩漏
 ```bash
 valgrind --leak-check=full ./advanced_pointers
 ```
 
-# 📈 學習成果
+## 📈 學習成果
 
 ✅ 掌握 C 語言記憶體管理的細節
 ✅ 理解函數指標在嵌入式系統中的應用
 ✅ 實作事件驅動的系統架構
 ✅ 遵循業界編碼標準
 
-# 實際應用
+## 實際應用
 這些技能直接對應到 OpenBMC 開發中的：
 
 D-Bus 事件處理（回調機制）
@@ -141,13 +141,14 @@ D-Bus 事件處理（回調機制）
 感測器數據處理（MISRA-C 規範）
 系統資源管理（記憶體管理）
 
-# 📚 學習資源
+## 📚 學習資源
 
 OpenBMC 官方文檔
 MISRA-C 編碼指南
 Linux Kernel Coding Style
 
-# 🗓️ 未來計畫
+## 🗓️ 未來計畫
+
 2: Linux 核心與硬體介面
 
  I2C/SPI 驅動程式開發
@@ -167,5 +168,5 @@ Linux Kernel Coding Style
  完整系統測試
 
 
-📄 授權
+## 📄 授權
 本專案採用 MIT License - 詳見 LICENSE 檔案
