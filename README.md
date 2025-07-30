@@ -28,7 +28,7 @@ openbmc-training/
         └── fan_control_state_machine.c
 ```
         
-🔧 Week 1: C 語言進階技術
+🔧 1: C 語言
 1️⃣ 進階指標操作 (pointers/)
 學習重點：
 
@@ -126,14 +126,14 @@ gcc -Wall -Wextra -Werror -std=c99 -pedantic -g -o output input.c
 valgrind --leak-check=full ./advanced_pointers
 ```
 
-📈 學習成果
+# 📈 學習成果
 
 ✅ 掌握 C 語言記憶體管理的細節
 ✅ 理解函數指標在嵌入式系統中的應用
 ✅ 實作事件驅動的系統架構
 ✅ 遵循業界編碼標準
 
-實際應用
+# 實際應用
 這些技能直接對應到 OpenBMC 開發中的：
 
 D-Bus 事件處理（回調機制）
@@ -141,13 +141,13 @@ D-Bus 事件處理（回調機制）
 感測器數據處理（MISRA-C 規範）
 系統資源管理（記憶體管理）
 
-📚 學習資源
+# 📚 學習資源
 
 OpenBMC 官方文檔
 MISRA-C 編碼指南
 Linux Kernel Coding Style
 
-🗓️ 未來計畫
+# 🗓️ 未來計畫
 2: Linux 核心與硬體介面
 
  I2C/SPI 驅動程式開發
@@ -166,10 +166,6 @@ Linux Kernel Coding Style
  BMC Web 服務開發
  完整系統測試
 
-🤝 聯絡方式
-
-GitHub: Sonny092910847
-Email: jasongod5737@gmail.com
 
 📄 授權
 本專案採用 MIT License - 詳見 LICENSE 檔案
